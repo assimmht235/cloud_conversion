@@ -44,5 +44,5 @@ et de l'executer rapidement.
 langage java, plateforme (netbeans ou j2ee), github pour le dépot git, OpenShift pour le deploiement de l'application sur le cloud.
 </p>
 
-<img src="usecase.png" /><br/>
-<img src="class.png" />
+<img src="usecase.PNG" /><br/>
+<img src="class.PNG" />
