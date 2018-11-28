@@ -10,8 +10,7 @@
 <h2>Architecture globale de l'application</h2>
 
 <p>
-L'application sera conçue sous la forme d'un ensemble de web service ou l'on trouvera le web service client qui demande des services 
-et le web service fournisseur ou serveur qui resoudra les services demandés.
+L'environnement client–serveur désigne un mode de communication à travers un réseau entre plusieurs programmes : l'un, qualifié de client, envoie des requêtes ; l'autre  qualifié de serveurs dans ce cas notre application de conversion, attendent les requêtes des clients et y répondent. Le client envoie des requetes http pour demander à l'application de faire la conversion d'un document word vers pdf et vise-versa,le client a un delai d'attente de 10 secondes pour telecharger le fichier sinon le document sera supprimer.
 </p>
 
 <h2>Architecture de la couche de donnée</h2>
