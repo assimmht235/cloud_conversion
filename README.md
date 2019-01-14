@@ -28,6 +28,7 @@ Cette souplesse implique cependant un coût additionnel, dû à une plus grande 
 <h2>Gestion des clients</h2>
 
 <p>
+
 Les clients seront gerer comme Thread
 une fois q'un client arrive a la plateforme il doit s'authentifier grace a son PID on pourra gerer ce client parraport au autre. 
 au cas ou il y'aura une activité en cours d'execution (conversion) alors le client sera mis en attente cette activité (la conversion) constituera 
@@ -35,6 +36,16 @@ notre Section critiqueet tout les clients seront gerées en fonction de l'etat d
 dans l'etat demandeur ou en attente ou en execution
 Justification : le Thread represente des processus leger, l'utilisation de plusieurs threads permet de paralléliser le traitement
 et de l'executer rapidement.
+</p>
+
+<p>
+Le site utilise le pattern MVC qui permet de bien organiser le code source. Il va nous aider à savoir quels fichiers créer, mais surtout à définir leur rôle. Le but de MVC est justement de séparer la logique du code en trois parties que l'on retrouve dans des fichiers distincts.
+
+Modèle : cette partie gère les données de votre site. Son rôle est d'aller récupérer les informations « brutes » dans la base de données, de les organiser et de les assembler pour qu'elles puissent ensuite être traitées par le contrôleur. On y trouve donc entre autres les requêtes SQL.
+
+Vue : cette partie se concentre sur l'affichage. Elle ne fait presque aucun calcul et se contente de récupérer des variables pour savoir ce qu'elle doit afficher. On y trouve essentiellement du code HTML mais aussi quelques boucles et conditions PHP très simples, pour afficher par exemple une liste de messages.
+
+Contrôleur : cette partie gère la logique du code qui prend des décisions. C'est en quelque sorte l'intermédiaire entre le modèle et la vue : le contrôleur va demander au modèle les données, les analyser, prendre des décisions et renvoyer le texte à afficher à la vue. Le contrôleur contient exclusivement du PHP. C'est notamment lui qui détermine si le visiteur a le droit de voir la page ou non (gestion des droits d'accès).
 </p>
 
 <h2>Technologie choisie pour le développement</h2>
